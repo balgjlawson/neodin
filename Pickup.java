@@ -7,13 +7,17 @@ public class Pickup {
 	Solenoid inSolenoid;
 	Solenoid outSolenoid;
 	Talon pickupMotor;
-	public Pickup(Solenoid s1, Solenoid s2, Talon t)
-	{
-		inSolenoid = s1;
-		outSolenoid = s2;
-		pickupMotor = t;
-	}
+
 	
+
+
+	public Pickup(Solenoid pickupA, Solenoid pickupB, Talon pickup) {
+		// TODO Auto-generated constructor stub
+		inSolenoid = pickupA;
+		outSolenoid = pickupB;
+		pickupMotor = pickup;
+	}
+
 	public void extend()
 	{
 		outSolenoid.set(true);
@@ -33,4 +37,3 @@ public class Pickup {
 		pickupMotor.set(1);
 	}
 }
-
