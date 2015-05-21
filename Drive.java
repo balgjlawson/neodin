@@ -55,10 +55,12 @@ RobotDrive odin;
 		odin.arcadeDrive(fixedX, fixedY);
 	}
 	
-	public static void shift(Solenoid s1, Solenoid s2)
+	public static void shift(Solenoid s1, Solenoid s2, Solenoid s3, Solenoid s4)
 	{
 			s1.set(!s1.get());
 			s2.set(!s2.get());
+			s3.set(!s3.get());
+			s4.set(!s4.get());
 	}
 	
 	
